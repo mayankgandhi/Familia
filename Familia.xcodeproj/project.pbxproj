@@ -16,6 +16,7 @@
 		5CA2AAB02A67FAB3001FD878 /* FamiliaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AAAF2A67FAB3001FD878 /* FamiliaTests.swift */; };
 		5CA2AABA2A67FAB3001FD878 /* FamiliaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AAB92A67FAB3001FD878 /* FamiliaUITests.swift */; };
 		5CA2AABC2A67FAB3001FD878 /* FamiliaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AABB2A67FAB3001FD878 /* FamiliaUITestsLaunchTests.swift */; };
+		5CA2AAC92A67FB15001FD878 /* AuthenticationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AAC82A67FB15001FD878 /* AuthenticationScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		5CA2AAB52A67FAB3001FD878 /* FamiliaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamiliaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA2AAB92A67FAB3001FD878 /* FamiliaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliaUITests.swift; sourceTree = "<group>"; };
 		5CA2AABB2A67FAB3001FD878 /* FamiliaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5CA2AAC82A67FB15001FD878 /* AuthenticationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationScreen.swift; sourceTree = "<group>"; };
+		5CA2AACA2A67FCC6001FD878 /* Familia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Familia.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +101,10 @@
 		5CA2AA982A67FAB2001FD878 /* Familia */ = {
 			isa = PBXGroup;
 			children = (
+				5CA2AACA2A67FCC6001FD878 /* Familia.entitlements */,
 				5CA2AA992A67FAB2001FD878 /* FamiliaApp.swift */,
 				5CA2AA9B2A67FAB2001FD878 /* ContentView.swift */,
+				5CA2AAC82A67FB15001FD878 /* AuthenticationScreen.swift */,
 				5CA2AA9D2A67FAB3001FD878 /* Assets.xcassets */,
 				5CA2AAA22A67FAB3001FD878 /* Persistence.swift */,
 				5CA2AAA42A67FAB3001FD878 /* Familia.xcdatamodeld */,
@@ -264,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CA2AAA32A67FAB3001FD878 /* Persistence.swift in Sources */,
+				5CA2AAC92A67FB15001FD878 /* AuthenticationScreen.swift in Sources */,
 				5CA2AA9C2A67FAB2001FD878 /* ContentView.swift in Sources */,
 				5CA2AA9A2A67FAB2001FD878 /* FamiliaApp.swift in Sources */,
 				5CA2AAA62A67FAB3001FD878 /* Familia.xcdatamodeld in Sources */,
@@ -422,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Familia/Familia.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Familia/Preview Content\"";
@@ -451,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Familia/Familia.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Familia/Preview Content\"";
