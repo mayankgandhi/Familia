@@ -17,6 +17,8 @@
 		5CA2AABA2A67FAB3001FD878 /* FamiliaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AAB92A67FAB3001FD878 /* FamiliaUITests.swift */; };
 		5CA2AABC2A67FAB3001FD878 /* FamiliaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AABB2A67FAB3001FD878 /* FamiliaUITestsLaunchTests.swift */; };
 		5CA2AAC92A67FB15001FD878 /* AuthenticationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AAC82A67FB15001FD878 /* AuthenticationScreen.swift */; };
+		5CA2AACE2A67FE55001FD878 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AACD2A67FE55001FD878 /* AuthenticationService.swift */; };
+		5CA2AAD02A67FEAC001FD878 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AACF2A67FEAC001FD878 /* KeychainItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		5CA2AABB2A67FAB3001FD878 /* FamiliaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5CA2AAC82A67FB15001FD878 /* AuthenticationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationScreen.swift; sourceTree = "<group>"; };
 		5CA2AACA2A67FCC6001FD878 /* Familia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Familia.entitlements; sourceTree = "<group>"; };
+		5CA2AACD2A67FE55001FD878 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		5CA2AACF2A67FEAC001FD878 /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				5CA2AACA2A67FCC6001FD878 /* Familia.entitlements */,
 				5CA2AA992A67FAB2001FD878 /* FamiliaApp.swift */,
 				5CA2AA9B2A67FAB2001FD878 /* ContentView.swift */,
+				5CA2AACD2A67FE55001FD878 /* AuthenticationService.swift */,
+				5CA2AACF2A67FEAC001FD878 /* KeychainItem.swift */,
 				5CA2AAC82A67FB15001FD878 /* AuthenticationScreen.swift */,
 				5CA2AA9D2A67FAB3001FD878 /* Assets.xcassets */,
 				5CA2AAA22A67FAB3001FD878 /* Persistence.swift */,
@@ -268,9 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CA2AAD02A67FEAC001FD878 /* KeychainItem.swift in Sources */,
 				5CA2AAA32A67FAB3001FD878 /* Persistence.swift in Sources */,
 				5CA2AAC92A67FB15001FD878 /* AuthenticationScreen.swift in Sources */,
 				5CA2AA9C2A67FAB2001FD878 /* ContentView.swift in Sources */,
+				5CA2AACE2A67FE55001FD878 /* AuthenticationService.swift in Sources */,
 				5CA2AA9A2A67FAB2001FD878 /* FamiliaApp.swift in Sources */,
 				5CA2AAA62A67FAB3001FD878 /* Familia.xcdatamodeld in Sources */,
 			);
