@@ -10,13 +10,29 @@
 		180837E12A6B0A3000819B6B /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 180837E02A6B0A3000819B6B /* Amplify */; };
 		180837E32A6B0A3000819B6B /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 180837E22A6B0A3000819B6B /* AWSAPIPlugin */; };
 		180837E52A6B0A3000819B6B /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 180837E42A6B0A3000819B6B /* AWSDataStorePlugin */; };
+		180D0D812A6B1F870062AD74 /* TodoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D0D7F2A6B1F870062AD74 /* TodoListPresenter.swift */; };
+		180D0D822A6B1F870062AD74 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D0D802A6B1F870062AD74 /* TodoList.swift */; };
+		180D0D842A6B1FA90062AD74 /* Domain+TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D0D832A6B1FA90062AD74 /* Domain+TodoList.swift */; };
+		180D0D862A6B1FFD0062AD74 /* CreateTodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D0D852A6B1FFD0062AD74 /* CreateTodoListView.swift */; };
+		180D0D882A6B24AC0062AD74 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D0D872A6B24AC0062AD74 /* RootView.swift */; };
 		18C9C3A92A6B079B004D5E9B /* FamiliaCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 18C9C3A82A6B079B004D5E9B /* FamiliaCore.docc */; };
 		18C9C3AF2A6B079B004D5E9B /* FamiliaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */; };
 		18C9C3B62A6B079B004D5E9B /* FamiliaCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C9C3B52A6B079B004D5E9B /* FamiliaCoreTests.swift */; };
 		18C9C3B72A6B079B004D5E9B /* FamiliaCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 18C9C3A72A6B079B004D5E9B /* FamiliaCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18C9C3BA2A6B079B004D5E9B /* FamiliaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */; };
 		18C9C3BB2A6B079B004D5E9B /* FamiliaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		216B53879075AD29E8FA03C1 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 4624284C7D688487BACAA29B /* amplifyconfiguration.json */; };
+		18DF5EA12A6B1697006887F4 /* FamiliaCoreApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DF5EA02A6B1697006887F4 /* FamiliaCoreApplicationService.swift */; };
+		18DF5EA22A6B174E006887F4 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD2787A99B60362E74EE099 /* TodoItem.swift */; };
+		18DF5EA32A6B174E006887F4 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 4624284C7D688487BACAA29B /* amplifyconfiguration.json */; };
+		18DF5EA42A6B174E006887F4 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BA4A70030C11CECD09110E /* Todo.swift */; };
+		18DF5EA52A6B174E006887F4 /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FCA021EE5FB073D09A9B7 /* Family.swift */; };
+		18DF5EA62A6B174E006887F4 /* Todo+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5C51A023BE51C95227EDC /* Todo+Schema.swift */; };
+		18DF5EA72A6B174E006887F4 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7909793BD919B75FEBDF2A8 /* User+Schema.swift */; };
+		18DF5EA82A6B174E006887F4 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AEF4BD419DFB65C2962B38E /* awsconfiguration.json */; };
+		18DF5EA92A6B174E006887F4 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9214CEB4F7A56C23F95908 /* AmplifyModels.swift */; };
+		18DF5EAA2A6B174E006887F4 /* TodoItem+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA86B628080044F764069B7 /* TodoItem+Schema.swift */; };
+		18DF5EAB2A6B174E006887F4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45241FA7B0773817C8BCEB90 /* User.swift */; };
+		18DF5EAC2A6B174E006887F4 /* Family+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7310BFEEBA38C47FAAA54B78 /* Family+Schema.swift */; };
 		5CA2AA9A2A67FAB2001FD878 /* FamiliaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AA992A67FAB2001FD878 /* FamiliaApp.swift */; };
 		5CA2AA9C2A67FAB2001FD878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AA9B2A67FAB2001FD878 /* ContentView.swift */; };
 		5CA2AA9E2A67FAB3001FD878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA2AA9D2A67FAB3001FD878 /* Assets.xcassets */; };
@@ -29,7 +45,6 @@
 		5CA2AAC92A67FB15001FD878 /* AuthenticationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AAC82A67FB15001FD878 /* AuthenticationScreen.swift */; };
 		5CA2AACE2A67FE55001FD878 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AACD2A67FE55001FD878 /* AuthenticationService.swift */; };
 		5CA2AAD02A67FEAC001FD878 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AACF2A67FEAC001FD878 /* KeychainItem.swift */; };
-		63DD0DC857A5C20330D291D5 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AEF4BD419DFB65C2962B38E /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,13 +100,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0AEF4BD419DFB65C2962B38E /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; lastKnownFileType = text.json; name = awsconfiguration.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		0AEF4BD419DFB65C2962B38E /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		180D0D7F2A6B1F870062AD74 /* TodoListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListPresenter.swift; sourceTree = "<group>"; };
+		180D0D802A6B1F870062AD74 /* TodoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		180D0D832A6B1FA90062AD74 /* Domain+TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain+TodoList.swift"; sourceTree = "<group>"; };
+		180D0D852A6B1FFD0062AD74 /* CreateTodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTodoListView.swift; sourceTree = "<group>"; };
+		180D0D872A6B24AC0062AD74 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FamiliaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C9C3A72A6B079B004D5E9B /* FamiliaCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FamiliaCore.h; sourceTree = "<group>"; };
 		18C9C3A82A6B079B004D5E9B /* FamiliaCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = FamiliaCore.docc; sourceTree = "<group>"; };
 		18C9C3AE2A6B079B004D5E9B /* FamiliaCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamiliaCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C9C3B52A6B079B004D5E9B /* FamiliaCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliaCoreTests.swift; sourceTree = "<group>"; };
-		4624284C7D688487BACAA29B /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; lastKnownFileType = text.json; name = amplifyconfiguration.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		18DF5EA02A6B1697006887F4 /* FamiliaCoreApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliaCoreApplicationService.swift; sourceTree = "<group>"; };
+		45241FA7B0773817C8BCEB90 /* User.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = User.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
+		4624284C7D688487BACAA29B /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		5BA86B628080044F764069B7 /* TodoItem+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "TodoItem+Schema.swift"; path = "amplify/generated/models/TodoItem+Schema.swift"; sourceTree = "<group>"; };
 		5CA2AA962A67FAB2001FD878 /* Familia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Familia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA2AA992A67FAB2001FD878 /* FamiliaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliaApp.swift; sourceTree = "<group>"; };
 		5CA2AA9B2A67FAB2001FD878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +131,13 @@
 		5CA2AACA2A67FCC6001FD878 /* Familia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Familia.entitlements; sourceTree = "<group>"; };
 		5CA2AACD2A67FE55001FD878 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		5CA2AACF2A67FEAC001FD878 /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
+		7310BFEEBA38C47FAAA54B78 /* Family+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Family+Schema.swift"; path = "amplify/generated/models/Family+Schema.swift"; sourceTree = "<group>"; };
+		7DE5C51A023BE51C95227EDC /* Todo+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Todo+Schema.swift"; path = "amplify/generated/models/Todo+Schema.swift"; sourceTree = "<group>"; };
+		7FD2787A99B60362E74EE099 /* TodoItem.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = TodoItem.swift; path = amplify/generated/models/TodoItem.swift; sourceTree = "<group>"; };
+		848FCA021EE5FB073D09A9B7 /* Family.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Family.swift; path = amplify/generated/models/Family.swift; sourceTree = "<group>"; };
+		85BA4A70030C11CECD09110E /* Todo.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Todo.swift; path = amplify/generated/models/Todo.swift; sourceTree = "<group>"; };
+		9D9214CEB4F7A56C23F95908 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		B7909793BD919B75FEBDF2A8 /* User+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "User+Schema.swift"; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,10 +184,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180D0D7E2A6B1F870062AD74 /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				180D0D7F2A6B1F870062AD74 /* TodoListPresenter.swift */,
+				180D0D802A6B1F870062AD74 /* TodoList.swift */,
+				180D0D832A6B1FA90062AD74 /* Domain+TodoList.swift */,
+				180D0D852A6B1FFD0062AD74 /* CreateTodoListView.swift */,
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
 		18C9C3A62A6B079B004D5E9B /* FamiliaCore */ = {
 			isa = PBXGroup;
 			children = (
+				556CB65375D45B42DE86F225 /* AmplifyConfig */,
+				BEC16D2F068CC503C4E5164D /* AmplifyModels */,
 				18C9C3A72A6B079B004D5E9B /* FamiliaCore.h */,
+				18DF5EA02A6B1697006887F4 /* FamiliaCoreApplicationService.swift */,
 				18C9C3A82A6B079B004D5E9B /* FamiliaCore.docc */,
 			);
 			path = FamiliaCore;
@@ -178,6 +222,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		18DF5EAD2A6B1C0A006887F4 /* SignInWithApple */ = {
+			isa = PBXGroup;
+			children = (
+				5CA2AACD2A67FE55001FD878 /* AuthenticationService.swift */,
+				5CA2AACF2A67FEAC001FD878 /* KeychainItem.swift */,
+				5CA2AAC82A67FB15001FD878 /* AuthenticationScreen.swift */,
+			);
+			path = SignInWithApple;
+			sourceTree = "<group>";
+		};
 		556CB65375D45B42DE86F225 /* AmplifyConfig */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +239,7 @@
 				4624284C7D688487BACAA29B /* amplifyconfiguration.json */,
 			);
 			name = AmplifyConfig;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		5CA2AA8D2A67FAB2001FD878 = {
@@ -197,7 +252,6 @@
 				18C9C3B42A6B079B004D5E9B /* FamiliaCoreTests */,
 				5CA2AA972A67FAB2001FD878 /* Products */,
 				18C9C3CC2A6B08B7004D5E9B /* Frameworks */,
-				556CB65375D45B42DE86F225 /* AmplifyConfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,9 +273,9 @@
 				5CA2AACA2A67FCC6001FD878 /* Familia.entitlements */,
 				5CA2AA992A67FAB2001FD878 /* FamiliaApp.swift */,
 				5CA2AA9B2A67FAB2001FD878 /* ContentView.swift */,
-				5CA2AACD2A67FE55001FD878 /* AuthenticationService.swift */,
-				5CA2AACF2A67FEAC001FD878 /* KeychainItem.swift */,
-				5CA2AAC82A67FB15001FD878 /* AuthenticationScreen.swift */,
+				180D0D872A6B24AC0062AD74 /* RootView.swift */,
+				180D0D7E2A6B1F870062AD74 /* TodoList */,
+				18DF5EAD2A6B1C0A006887F4 /* SignInWithApple */,
 				5CA2AA9D2A67FAB3001FD878 /* Assets.xcassets */,
 				5CA2AAA22A67FAB3001FD878 /* Persistence.swift */,
 				5CA2AAA42A67FAB3001FD878 /* Familia.xcdatamodeld */,
@@ -253,6 +307,23 @@
 				5CA2AABB2A67FAB3001FD878 /* FamiliaUITestsLaunchTests.swift */,
 			);
 			path = FamiliaUITests;
+			sourceTree = "<group>";
+		};
+		BEC16D2F068CC503C4E5164D /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				9D9214CEB4F7A56C23F95908 /* AmplifyModels.swift */,
+				7310BFEEBA38C47FAAA54B78 /* Family+Schema.swift */,
+				848FCA021EE5FB073D09A9B7 /* Family.swift */,
+				7DE5C51A023BE51C95227EDC /* Todo+Schema.swift */,
+				85BA4A70030C11CECD09110E /* Todo.swift */,
+				5BA86B628080044F764069B7 /* TodoItem+Schema.swift */,
+				7FD2787A99B60362E74EE099 /* TodoItem.swift */,
+				B7909793BD919B75FEBDF2A8 /* User+Schema.swift */,
+				45241FA7B0773817C8BCEB90 /* User.swift */,
+			);
+			name = AmplifyModels;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,6 +497,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DF5EA82A6B174E006887F4 /* awsconfiguration.json in Resources */,
+				18DF5EA32A6B174E006887F4 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,8 +515,6 @@
 			files = (
 				5CA2AAA12A67FAB3001FD878 /* Preview Assets.xcassets in Resources */,
 				5CA2AA9E2A67FAB3001FD878 /* Assets.xcassets in Resources */,
-				63DD0DC857A5C20330D291D5 /* awsconfiguration.json in Resources */,
-				216B53879075AD29E8FA03C1 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +539,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DF5EAA2A6B174E006887F4 /* TodoItem+Schema.swift in Sources */,
+				18DF5EA52A6B174E006887F4 /* Family.swift in Sources */,
 				18C9C3A92A6B079B004D5E9B /* FamiliaCore.docc in Sources */,
+				18DF5EA62A6B174E006887F4 /* Todo+Schema.swift in Sources */,
+				18DF5EA72A6B174E006887F4 /* User+Schema.swift in Sources */,
+				18DF5EA92A6B174E006887F4 /* AmplifyModels.swift in Sources */,
+				18DF5EA22A6B174E006887F4 /* TodoItem.swift in Sources */,
+				18DF5EA12A6B1697006887F4 /* FamiliaCoreApplicationService.swift in Sources */,
+				18DF5EAB2A6B174E006887F4 /* User.swift in Sources */,
+				18DF5EAC2A6B174E006887F4 /* Family+Schema.swift in Sources */,
+				18DF5EA42A6B174E006887F4 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,11 +565,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180D0D822A6B1F870062AD74 /* TodoList.swift in Sources */,
 				5CA2AAD02A67FEAC001FD878 /* KeychainItem.swift in Sources */,
+				180D0D862A6B1FFD0062AD74 /* CreateTodoListView.swift in Sources */,
 				5CA2AAA32A67FAB3001FD878 /* Persistence.swift in Sources */,
 				5CA2AAC92A67FB15001FD878 /* AuthenticationScreen.swift in Sources */,
 				5CA2AA9C2A67FAB2001FD878 /* ContentView.swift in Sources */,
+				180D0D812A6B1F870062AD74 /* TodoListPresenter.swift in Sources */,
 				5CA2AACE2A67FE55001FD878 /* AuthenticationService.swift in Sources */,
+				180D0D882A6B24AC0062AD74 /* RootView.swift in Sources */,
+				180D0D842A6B1FA90062AD74 /* Domain+TodoList.swift in Sources */,
 				5CA2AA9A2A67FAB2001FD878 /* FamiliaApp.swift in Sources */,
 				5CA2AAA62A67FAB3001FD878 /* Familia.xcdatamodeld in Sources */,
 			);
@@ -761,6 +847,7 @@
 		5CA2AAC02A67FAB3001FD878 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Familia/Familia.entitlements;
@@ -791,6 +878,7 @@
 		5CA2AAC12A67FAB3001FD878 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Familia/Familia.entitlements;

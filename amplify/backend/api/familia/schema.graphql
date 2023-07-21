@@ -25,7 +25,7 @@ type Todo @model {
 type TodoItem @model {
   id: ID!
   content: String!
-  checked: Bool!
+  checked: Boolean!
   todo: Todo @belongsTo
 }
 

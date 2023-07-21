@@ -9,13 +9,9 @@ import SwiftUI
 
 @main
 struct FamiliaApp: App {
-    let persistenceController = PersistenceController.shared
-
     var body: some Scene {
         WindowGroup {
-            AuthenticationScreen()
-//            ContentView()
-//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            RootView()
         }
     }
 }

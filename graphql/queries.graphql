@@ -1,0 +1,413 @@
+# this is an auto generated file. This will be overwritten
+query GetFamily($id: ID!) {
+  getFamily(id: $id) {
+    id
+    name
+    users {
+      items {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        familyUsersId
+      }
+      nextToken
+      startedAt
+    }
+    todos {
+      items {
+        id
+        title
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        familyTodosId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListFamilies(
+  $filter: ModelFamilyFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listFamilies(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      users {
+        nextToken
+        startedAt
+      }
+      todos {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncFamilies(
+  $filter: ModelFamilyFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncFamilies(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      name
+      users {
+        nextToken
+        startedAt
+      }
+      todos {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetUser($id: ID!) {
+  getUser(id: $id) {
+    id
+    name
+    family {
+      id
+      name
+      users {
+        nextToken
+        startedAt
+      }
+      todos {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    familyUsersId
+  }
+}
+query ListUsers(
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      family {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      familyUsersId
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncUsers(
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncUsers(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      name
+      family {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      familyUsersId
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetTodo($id: ID!) {
+  getTodo(id: $id) {
+    id
+    title
+    items {
+      items {
+        id
+        content
+        checked
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        todoItemsId
+      }
+      nextToken
+      startedAt
+    }
+    family {
+      id
+      name
+      users {
+        nextToken
+        startedAt
+      }
+      todos {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    familyTodosId
+  }
+}
+query ListTodos(
+  $filter: ModelTodoFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listTodos(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      title
+      items {
+        nextToken
+        startedAt
+      }
+      family {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      familyTodosId
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncTodos(
+  $filter: ModelTodoFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncTodos(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      title
+      items {
+        nextToken
+        startedAt
+      }
+      family {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      familyTodosId
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetTodoItem($id: ID!) {
+  getTodoItem(id: $id) {
+    id
+    content
+    checked
+    todo {
+      id
+      title
+      items {
+        nextToken
+        startedAt
+      }
+      family {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      familyTodosId
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    todoItemsId
+  }
+}
+query ListTodoItems(
+  $filter: ModelTodoItemFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listTodoItems(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      content
+      checked
+      todo {
+        id
+        title
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        familyTodosId
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      todoItemsId
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncTodoItems(
+  $filter: ModelTodoItemFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncTodoItems(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      content
+      checked
+      todo {
+        id
+        title
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        familyTodosId
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      todoItemsId
+    }
+    nextToken
+    startedAt
+  }
+}

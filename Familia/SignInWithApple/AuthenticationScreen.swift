@@ -8,6 +8,7 @@
 import Foundation
 import AuthenticationServices
 import SwiftUI
+import FamiliaCore
 
 class AuthenticationInteractor {
     
@@ -23,7 +24,8 @@ class AuthenticationInteractor {
 struct AuthenticationScreen: View {
     
     let interactor = AuthenticationInteractor()
-    
+    let familiaCoreApplicationService = FamiliaCoreApplicationService()
+
     var body: some View {
         VStack {
             Spacer()
