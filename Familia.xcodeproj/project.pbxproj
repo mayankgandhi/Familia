@@ -16,6 +16,7 @@
 		18C9C3B72A6B079B004D5E9B /* FamiliaCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 18C9C3A72A6B079B004D5E9B /* FamiliaCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18C9C3BA2A6B079B004D5E9B /* FamiliaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */; };
 		18C9C3BB2A6B079B004D5E9B /* FamiliaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		216B53879075AD29E8FA03C1 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 4624284C7D688487BACAA29B /* amplifyconfiguration.json */; };
 		5CA2AA9A2A67FAB2001FD878 /* FamiliaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AA992A67FAB2001FD878 /* FamiliaApp.swift */; };
 		5CA2AA9C2A67FAB2001FD878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AA9B2A67FAB2001FD878 /* ContentView.swift */; };
 		5CA2AA9E2A67FAB3001FD878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA2AA9D2A67FAB3001FD878 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		5CA2AAC92A67FB15001FD878 /* AuthenticationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AAC82A67FB15001FD878 /* AuthenticationScreen.swift */; };
 		5CA2AACE2A67FE55001FD878 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AACD2A67FE55001FD878 /* AuthenticationService.swift */; };
 		5CA2AAD02A67FEAC001FD878 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AACF2A67FEAC001FD878 /* KeychainItem.swift */; };
+		63DD0DC857A5C20330D291D5 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AEF4BD419DFB65C2962B38E /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,11 +85,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0AEF4BD419DFB65C2962B38E /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; lastKnownFileType = text.json; name = awsconfiguration.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FamiliaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C9C3A72A6B079B004D5E9B /* FamiliaCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FamiliaCore.h; sourceTree = "<group>"; };
 		18C9C3A82A6B079B004D5E9B /* FamiliaCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = FamiliaCore.docc; sourceTree = "<group>"; };
 		18C9C3AE2A6B079B004D5E9B /* FamiliaCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamiliaCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C9C3B52A6B079B004D5E9B /* FamiliaCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliaCoreTests.swift; sourceTree = "<group>"; };
+		4624284C7D688487BACAA29B /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; lastKnownFileType = text.json; name = amplifyconfiguration.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		5CA2AA962A67FAB2001FD878 /* Familia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Familia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA2AA992A67FAB2001FD878 /* FamiliaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliaApp.swift; sourceTree = "<group>"; };
 		5CA2AA9B2A67FAB2001FD878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -174,6 +178,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		556CB65375D45B42DE86F225 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				0AEF4BD419DFB65C2962B38E /* awsconfiguration.json */,
+				4624284C7D688487BACAA29B /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
 		5CA2AA8D2A67FAB2001FD878 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +197,7 @@
 				18C9C3B42A6B079B004D5E9B /* FamiliaCoreTests */,
 				5CA2AA972A67FAB2001FD878 /* Products */,
 				18C9C3CC2A6B08B7004D5E9B /* Frameworks */,
+				556CB65375D45B42DE86F225 /* AmplifyConfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -312,8 +326,6 @@
 				18C9C3B92A6B079B004D5E9B /* PBXTargetDependency */,
 			);
 			name = Familia;
-			packageProductDependencies = (
-			);
 			productName = Familia;
 			productReference = 5CA2AA962A67FAB2001FD878 /* Familia.app */;
 			productType = "com.apple.product-type.application";
@@ -430,6 +442,8 @@
 			files = (
 				5CA2AAA12A67FAB3001FD878 /* Preview Assets.xcassets in Resources */,
 				5CA2AA9E2A67FAB3001FD878 /* Assets.xcassets in Resources */,
+				63DD0DC857A5C20330D291D5 /* awsconfiguration.json in Resources */,
+				216B53879075AD29E8FA03C1 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
