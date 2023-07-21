@@ -33,7 +33,7 @@ struct RootView: View {
     @StateObject var createTodoListViewPresenter = CreateTodoListViewPresenter()
     
     var body: some View {
-        CreateTodoListView(title: "Grocery List",
+        TodoListView(title: "Grocery List",
                            todos: $createTodoListViewPresenter.todos,
                            didTapToEdit: createTodoListViewPresenter.didTapToEdit(todoListItem:),
                            onSubmitTextField: createTodoListViewPresenter.onSubmitTextField(todoListItem:))
