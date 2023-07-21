@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180837E12A6B0A3000819B6B /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 180837E02A6B0A3000819B6B /* Amplify */; };
+		180837E32A6B0A3000819B6B /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 180837E22A6B0A3000819B6B /* AWSAPIPlugin */; };
+		180837E52A6B0A3000819B6B /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 180837E42A6B0A3000819B6B /* AWSDataStorePlugin */; };
+		18C9C3A92A6B079B004D5E9B /* FamiliaCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 18C9C3A82A6B079B004D5E9B /* FamiliaCore.docc */; };
+		18C9C3AF2A6B079B004D5E9B /* FamiliaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */; };
+		18C9C3B62A6B079B004D5E9B /* FamiliaCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C9C3B52A6B079B004D5E9B /* FamiliaCoreTests.swift */; };
+		18C9C3B72A6B079B004D5E9B /* FamiliaCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 18C9C3A72A6B079B004D5E9B /* FamiliaCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18C9C3BA2A6B079B004D5E9B /* FamiliaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */; };
+		18C9C3BB2A6B079B004D5E9B /* FamiliaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5CA2AA9A2A67FAB2001FD878 /* FamiliaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AA992A67FAB2001FD878 /* FamiliaApp.swift */; };
 		5CA2AA9C2A67FAB2001FD878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AA9B2A67FAB2001FD878 /* ContentView.swift */; };
 		5CA2AA9E2A67FAB3001FD878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA2AA9D2A67FAB3001FD878 /* Assets.xcassets */; };
@@ -22,6 +31,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		18C9C3B02A6B079B004D5E9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CA2AA8E2A67FAB2001FD878 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18C9C3A42A6B079B004D5E9B;
+			remoteInfo = FamiliaCore;
+		};
+		18C9C3B22A6B079B004D5E9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CA2AA8E2A67FAB2001FD878 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CA2AA952A67FAB2001FD878;
+			remoteInfo = Familia;
+		};
+		18C9C3B82A6B079B004D5E9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CA2AA8E2A67FAB2001FD878 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18C9C3A42A6B079B004D5E9B;
+			remoteInfo = FamiliaCore;
+		};
 		5CA2AAAC2A67FAB3001FD878 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5CA2AA8E2A67FAB2001FD878 /* Project object */;
@@ -38,7 +68,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		18C9C3BC2A6B079B004D5E9B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18C9C3BB2A6B079B004D5E9B /* FamiliaCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FamiliaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C9C3A72A6B079B004D5E9B /* FamiliaCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FamiliaCore.h; sourceTree = "<group>"; };
+		18C9C3A82A6B079B004D5E9B /* FamiliaCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = FamiliaCore.docc; sourceTree = "<group>"; };
+		18C9C3AE2A6B079B004D5E9B /* FamiliaCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamiliaCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C9C3B52A6B079B004D5E9B /* FamiliaCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliaCoreTests.swift; sourceTree = "<group>"; };
 		5CA2AA962A67FAB2001FD878 /* Familia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Familia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA2AA992A67FAB2001FD878 /* FamiliaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliaApp.swift; sourceTree = "<group>"; };
 		5CA2AA9B2A67FAB2001FD878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,10 +107,29 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		18C9C3A22A6B079B004D5E9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180837E52A6B0A3000819B6B /* AWSDataStorePlugin in Frameworks */,
+				180837E32A6B0A3000819B6B /* AWSAPIPlugin in Frameworks */,
+				180837E12A6B0A3000819B6B /* Amplify in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C9C3AB2A6B079B004D5E9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C9C3AF2A6B079B004D5E9B /* FamiliaCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CA2AA932A67FAB2001FD878 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C9C3BA2A6B079B004D5E9B /* FamiliaCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,13 +150,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18C9C3A62A6B079B004D5E9B /* FamiliaCore */ = {
+			isa = PBXGroup;
+			children = (
+				18C9C3A72A6B079B004D5E9B /* FamiliaCore.h */,
+				18C9C3A82A6B079B004D5E9B /* FamiliaCore.docc */,
+			);
+			path = FamiliaCore;
+			sourceTree = "<group>";
+		};
+		18C9C3B42A6B079B004D5E9B /* FamiliaCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				18C9C3B52A6B079B004D5E9B /* FamiliaCoreTests.swift */,
+			);
+			path = FamiliaCoreTests;
+			sourceTree = "<group>";
+		};
+		18C9C3CC2A6B08B7004D5E9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5CA2AA8D2A67FAB2001FD878 = {
 			isa = PBXGroup;
 			children = (
 				5CA2AA982A67FAB2001FD878 /* Familia */,
 				5CA2AAAE2A67FAB3001FD878 /* FamiliaTests */,
 				5CA2AAB82A67FAB3001FD878 /* FamiliaUITests */,
+				18C9C3A62A6B079B004D5E9B /* FamiliaCore */,
+				18C9C3B42A6B079B004D5E9B /* FamiliaCoreTests */,
 				5CA2AA972A67FAB2001FD878 /* Products */,
+				18C9C3CC2A6B08B7004D5E9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +193,8 @@
 				5CA2AA962A67FAB2001FD878 /* Familia.app */,
 				5CA2AAAB2A67FAB3001FD878 /* FamiliaTests.xctest */,
 				5CA2AAB52A67FAB3001FD878 /* FamiliaUITests.xctest */,
+				18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */,
+				18C9C3AE2A6B079B004D5E9B /* FamiliaCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,7 +243,60 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		18C9C3A02A6B079B004D5E9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C9C3B72A6B079B004D5E9B /* FamiliaCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		18C9C3A42A6B079B004D5E9B /* FamiliaCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C9C3C12A6B079B004D5E9B /* Build configuration list for PBXNativeTarget "FamiliaCore" */;
+			buildPhases = (
+				18C9C3A02A6B079B004D5E9B /* Headers */,
+				18C9C3A12A6B079B004D5E9B /* Sources */,
+				18C9C3A22A6B079B004D5E9B /* Frameworks */,
+				18C9C3A32A6B079B004D5E9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FamiliaCore;
+			packageProductDependencies = (
+				180837E02A6B0A3000819B6B /* Amplify */,
+				180837E22A6B0A3000819B6B /* AWSAPIPlugin */,
+				180837E42A6B0A3000819B6B /* AWSDataStorePlugin */,
+			);
+			productName = FamiliaCore;
+			productReference = 18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		18C9C3AD2A6B079B004D5E9B /* FamiliaCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C9C3C22A6B079B004D5E9B /* Build configuration list for PBXNativeTarget "FamiliaCoreTests" */;
+			buildPhases = (
+				18C9C3AA2A6B079B004D5E9B /* Sources */,
+				18C9C3AB2A6B079B004D5E9B /* Frameworks */,
+				18C9C3AC2A6B079B004D5E9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18C9C3B12A6B079B004D5E9B /* PBXTargetDependency */,
+				18C9C3B32A6B079B004D5E9B /* PBXTargetDependency */,
+			);
+			name = FamiliaCoreTests;
+			productName = FamiliaCoreTests;
+			productReference = 18C9C3AE2A6B079B004D5E9B /* FamiliaCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5CA2AA952A67FAB2001FD878 /* Familia */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CA2AABF2A67FAB3001FD878 /* Build configuration list for PBXNativeTarget "Familia" */;
@@ -154,12 +304,16 @@
 				5CA2AA922A67FAB2001FD878 /* Sources */,
 				5CA2AA932A67FAB2001FD878 /* Frameworks */,
 				5CA2AA942A67FAB2001FD878 /* Resources */,
+				18C9C3BC2A6B079B004D5E9B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				18C9C3B92A6B079B004D5E9B /* PBXTargetDependency */,
 			);
 			name = Familia;
+			packageProductDependencies = (
+			);
 			productName = Familia;
 			productReference = 5CA2AA962A67FAB2001FD878 /* Familia.app */;
 			productType = "com.apple.product-type.application";
@@ -210,6 +364,13 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					18C9C3A42A6B079B004D5E9B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					18C9C3AD2A6B079B004D5E9B = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 5CA2AA952A67FAB2001FD878;
+					};
 					5CA2AA952A67FAB2001FD878 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -232,6 +393,9 @@
 				Base,
 			);
 			mainGroup = 5CA2AA8D2A67FAB2001FD878;
+			packageReferences = (
+				180837D92A6B09FA00819B6B /* XCRemoteSwiftPackageReference "amplify-swift" */,
+			);
 			productRefGroup = 5CA2AA972A67FAB2001FD878 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -239,11 +403,27 @@
 				5CA2AA952A67FAB2001FD878 /* Familia */,
 				5CA2AAAA2A67FAB3001FD878 /* FamiliaTests */,
 				5CA2AAB42A67FAB3001FD878 /* FamiliaUITests */,
+				18C9C3A42A6B079B004D5E9B /* FamiliaCore */,
+				18C9C3AD2A6B079B004D5E9B /* FamiliaCoreTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		18C9C3A32A6B079B004D5E9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C9C3AC2A6B079B004D5E9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CA2AA942A67FAB2001FD878 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,6 +450,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		18C9C3A12A6B079B004D5E9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C9C3A92A6B079B004D5E9B /* FamiliaCore.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C9C3AA2A6B079B004D5E9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C9C3B62A6B079B004D5E9B /* FamiliaCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CA2AA922A67FAB2001FD878 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,6 +500,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		18C9C3B12A6B079B004D5E9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18C9C3A42A6B079B004D5E9B /* FamiliaCore */;
+			targetProxy = 18C9C3B02A6B079B004D5E9B /* PBXContainerItemProxy */;
+		};
+		18C9C3B32A6B079B004D5E9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CA2AA952A67FAB2001FD878 /* Familia */;
+			targetProxy = 18C9C3B22A6B079B004D5E9B /* PBXContainerItemProxy */;
+		};
+		18C9C3B92A6B079B004D5E9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18C9C3A42A6B079B004D5E9B /* FamiliaCore */;
+			targetProxy = 18C9C3B82A6B079B004D5E9B /* PBXContainerItemProxy */;
+		};
 		5CA2AAAD2A67FAB3001FD878 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5CA2AA952A67FAB2001FD878 /* Familia */;
@@ -317,6 +528,108 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		18C9C3BD2A6B079B004D5E9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q7HVAVTGUP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = m.FamiliaCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		18C9C3BE2A6B079B004D5E9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q7HVAVTGUP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = m.FamiliaCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		18C9C3BF2A6B079B004D5E9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q7HVAVTGUP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = m.FamiliaCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Familia.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Familia";
+			};
+			name = Debug;
+		};
+		18C9C3C02A6B079B004D5E9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q7HVAVTGUP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = m.FamiliaCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Familia.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Familia";
+			};
+			name = Release;
+		};
 		5CA2AABD2A67FAB3001FD878 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -570,6 +883,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		18C9C3C12A6B079B004D5E9B /* Build configuration list for PBXNativeTarget "FamiliaCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C9C3BD2A6B079B004D5E9B /* Debug */,
+				18C9C3BE2A6B079B004D5E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18C9C3C22A6B079B004D5E9B /* Build configuration list for PBXNativeTarget "FamiliaCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C9C3BF2A6B079B004D5E9B /* Debug */,
+				18C9C3C02A6B079B004D5E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5CA2AA912A67FAB2001FD878 /* Build configuration list for PBXProject "Familia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -607,6 +938,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		180837D92A6B09FA00819B6B /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		180837E02A6B0A3000819B6B /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 180837D92A6B09FA00819B6B /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+		180837E22A6B0A3000819B6B /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 180837D92A6B09FA00819B6B /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		180837E42A6B0A3000819B6B /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 180837D92A6B09FA00819B6B /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSDataStorePlugin;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5CA2AAA42A67FAB3001FD878 /* Familia.xcdatamodeld */ = {
