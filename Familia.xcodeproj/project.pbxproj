@@ -49,6 +49,10 @@
 		5CA2AAC92A67FB15001FD878 /* AuthenticationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AAC82A67FB15001FD878 /* AuthenticationScreen.swift */; };
 		5CA2AACE2A67FE55001FD878 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AACD2A67FE55001FD878 /* AuthenticationService.swift */; };
 		5CA2AAD02A67FEAC001FD878 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AACF2A67FEAC001FD878 /* KeychainItem.swift */; };
+		5CB39DD92A6BE7CF00898B0E /* TodosGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB39DD82A6BE7CF00898B0E /* TodosGalleryView.swift */; };
+		5CB39DDD2A6BEF1D00898B0E /* DragDropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB39DDC2A6BEF1D00898B0E /* DragDropDelegate.swift */; };
+		5CB39DDF2A6BEFA900898B0E /* TodosGalleryDropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB39DDE2A6BEFA900898B0E /* TodosGalleryDropDelegate.swift */; };
+		5CB39DE12A6BF56F00898B0E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB39DE02A6BF56F00898B0E /* Colors.swift */; };
 		63DD0DC857A5C20330D291D5 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AEF4BD419DFB65C2962B38E /* awsconfiguration.json */; };
 		7E38C2300DCD59576AAD89E4 /* Family+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7310BFEEBA38C47FAAA54B78 /* Family+Schema.swift */; };
 		7EE000A27443DC8CDAF7FCCE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45241FA7B0773817C8BCEB90 /* User.swift */; };
@@ -142,6 +146,10 @@
 		5CA2AACA2A67FCC6001FD878 /* Familia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Familia.entitlements; sourceTree = "<group>"; };
 		5CA2AACD2A67FE55001FD878 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		5CA2AACF2A67FEAC001FD878 /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
+		5CB39DD82A6BE7CF00898B0E /* TodosGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosGalleryView.swift; sourceTree = "<group>"; };
+		5CB39DDC2A6BEF1D00898B0E /* DragDropDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropDelegate.swift; sourceTree = "<group>"; };
+		5CB39DDE2A6BEFA900898B0E /* TodosGalleryDropDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosGalleryDropDelegate.swift; sourceTree = "<group>"; };
+		5CB39DE02A6BF56F00898B0E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		7310BFEEBA38C47FAAA54B78 /* Family+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Family+Schema.swift"; path = "amplify/generated/models/Family+Schema.swift"; sourceTree = "<group>"; };
 		7DE5C51A023BE51C95227EDC /* Todo+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Todo+Schema.swift"; path = "amplify/generated/models/Todo+Schema.swift"; sourceTree = "<group>"; };
 		7FD2787A99B60362E74EE099 /* TodoItem.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = TodoItem.swift; path = amplify/generated/models/TodoItem.swift; sourceTree = "<group>"; };
@@ -271,8 +279,6 @@
 		556CB65375D45B42DE86F225 /* AmplifyConfig */ = {
 			isa = PBXGroup;
 			children = (
-				0AEF4BD419DFB65C2962B38E /* awsconfiguration.json */,
-				4624284C7D688487BACAA29B /* amplifyconfiguration.json */,
 			);
 			name = AmplifyConfig;
 			path = ..;
@@ -312,6 +318,10 @@
 				5CA2AA992A67FAB2001FD878 /* FamiliaApp.swift */,
 				5CA2AA9B2A67FAB2001FD878 /* ContentView.swift */,
 				180D0D872A6B24AC0062AD74 /* RootView.swift */,
+				5CB39DE02A6BF56F00898B0E /* Colors.swift */,
+				5CB39DD82A6BE7CF00898B0E /* TodosGalleryView.swift */,
+				5CB39DDE2A6BEFA900898B0E /* TodosGalleryDropDelegate.swift */,
+				5CB39DDC2A6BEF1D00898B0E /* DragDropDelegate.swift */,
 				180D0D7E2A6B1F870062AD74 /* TodoList */,
 				18DF5EAD2A6B1C0A006887F4 /* SignInWithApple */,
 				5CA2AA9D2A67FAB3001FD878 /* Assets.xcassets */,
@@ -350,15 +360,6 @@
 		BEC16D2F068CC503C4E5164D /* AmplifyModels */ = {
 			isa = PBXGroup;
 			children = (
-				9D9214CEB4F7A56C23F95908 /* AmplifyModels.swift */,
-				7310BFEEBA38C47FAAA54B78 /* Family+Schema.swift */,
-				848FCA021EE5FB073D09A9B7 /* Family.swift */,
-				7DE5C51A023BE51C95227EDC /* Todo+Schema.swift */,
-				85BA4A70030C11CECD09110E /* Todo.swift */,
-				5BA86B628080044F764069B7 /* TodoItem+Schema.swift */,
-				7FD2787A99B60362E74EE099 /* TodoItem.swift */,
-				B7909793BD919B75FEBDF2A8 /* User+Schema.swift */,
-				45241FA7B0773817C8BCEB90 /* User.swift */,
 			);
 			name = AmplifyModels;
 			path = ..;
@@ -611,17 +612,21 @@
 				5CA2AAA32A67FAB3001FD878 /* Persistence.swift in Sources */,
 				5CA2AAC92A67FB15001FD878 /* AuthenticationScreen.swift in Sources */,
 				5CA2AA9C2A67FAB2001FD878 /* ContentView.swift in Sources */,
+				5CB39DE12A6BF56F00898B0E /* Colors.swift in Sources */,
 				18B95BEE2A6BC6DF00545C50 /* TodoListItem.swift in Sources */,
 				5CA2AACE2A67FE55001FD878 /* AuthenticationService.swift in Sources */,
 				180D0D882A6B24AC0062AD74 /* RootView.swift in Sources */,
 				180D0D842A6B1FA90062AD74 /* TodoList.swift in Sources */,
+				5CB39DDF2A6BEFA900898B0E /* TodosGalleryDropDelegate.swift in Sources */,
 				5CA2AA9A2A67FAB2001FD878 /* FamiliaApp.swift in Sources */,
 				5CA2AAA62A67FAB3001FD878 /* Familia.xcdatamodeld in Sources */,
 				C33886CCC3498EC21661CEE7 /* AmplifyModels.swift in Sources */,
+				5CB39DD92A6BE7CF00898B0E /* TodosGalleryView.swift in Sources */,
 				7E38C2300DCD59576AAD89E4 /* Family+Schema.swift in Sources */,
 				2A8A55F873EFF7F173926868 /* Family.swift in Sources */,
 				255CA6640F928749023A5021 /* Todo+Schema.swift in Sources */,
 				BBAC7BEF692AD5D2AF5D4658 /* Todo.swift in Sources */,
+				5CB39DDD2A6BEF1D00898B0E /* DragDropDelegate.swift in Sources */,
 				558DEB1B287D74BE098B4CB5 /* TodoItem+Schema.swift in Sources */,
 				F3A026F28ED4F835FA941AEA /* TodoItem.swift in Sources */,
 				8209B2DBF9762E837D6CB9C9 /* User+Schema.swift in Sources */,

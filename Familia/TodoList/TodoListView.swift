@@ -12,38 +12,35 @@ struct TodoListView: View {
     let title: String
     @Binding var todos: [TodoListItem]
     @FocusState var isTextFieldFocused: Bool
-
     
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(todos) { todo in
-                    TodoListItemView(todoListItem: todo)
-                }
-                .onDelete { indexSet in
-                    todos.remove(atOffsets: indexSet)
-                }
-                .onMove { indexSet, index in
-                    todos.move(fromOffsets: indexSet, toOffset: index)
-                }
+        List {
+            ForEach(todos) { todo in
+                TodoListItemView(todoListItem: todo)
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    EditButton()
-                }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        todos.append(TodoListItem(id: UUID().uuidString,
-                                                  content: "New Todo Item",
-                                                  checked: false))
-                    } label: {
-                        Image(systemName: "plus")
-                    }
-                    
-                }
+            .onDelete { indexSet in
+                todos.remove(atOffsets: indexSet)
             }
-            .navigationTitle(title)
+            .onMove { indexSet, index in
+                todos.move(fromOffsets: indexSet, toOffset: index)
+            }
         }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                EditButton()
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    todos.append(TodoListItem(id: UUID().uuidString,
+                                              content: "New Todo Item",
+                                              checked: false))
+                } label: {
+                    Image(systemName: "plus")
+                }
+                
+            }
+        }
+        .navigationTitle(title)
     }
 }
 

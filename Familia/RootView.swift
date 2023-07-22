@@ -8,18 +8,28 @@
 import SwiftUI
 import FamiliaCore
 
-final class CreateTodoListViewPresenter: ObservableObject {
-    @Published var todos: [TodoListItem] = []
+final class TodoListGalleryViewPresenter: ObservableObject {
+    @Published var currentTodoList: TodoList? = nil
+    @Published var todolists: [TodoList] = []
+    
+    func onDelete(todolist: TodoList) {
+        guard let index = todolists.firstIndex(where: {
+            todolist.id == $0.id
+        }) else { return }
+        DispatchQueue.main.async {
+            self.todolists.remove(at: index)
+        }
+    }
 }
 
 struct RootView: View {
     
     let familiaCoreApplicationService = FamiliaCoreApplicationService()
-    @StateObject var createTodoListViewPresenter = CreateTodoListViewPresenter()
+    @StateObject var createTodoListViewPresenter = TodoListGalleryViewPresenter()
     
     var body: some View {
-        TodoListView(title: "Grocery List",
-                           todos: $createTodoListViewPresenter.todos)
+        TodoGalleryView(title: "All Todos",
+                        todoListGalleryViewPresenter: createTodoListViewPresenter)
     }
 }
 
