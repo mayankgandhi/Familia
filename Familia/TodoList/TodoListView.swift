@@ -11,12 +11,13 @@ struct TodoListView: View {
     
     let title: String
     @Binding var todos: [TodoListItem]
-    @FocusState var isTextFieldFocused: Bool
-    
+    @FocusState var isTextFieldFocused: String?
+
     var body: some View {
         List {
             ForEach(todos) { todo in
-                TodoListItemView(todoListItem: todo)
+                TodoListItemView(todoListItem: todo,
+                                 isTextFieldFocused: _isTextFieldFocused)
             }
             .onDelete { indexSet in
                 todos.remove(atOffsets: indexSet)
@@ -31,7 +32,9 @@ struct TodoListView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    todos.append(TodoListItem(id: UUID().uuidString,
+                    let id = UUID().uuidString
+                    isTextFieldFocused = id
+                    todos.append(TodoListItem(id: id,
                                               content: "New Todo Item",
                                               checked: false))
                 } label: {

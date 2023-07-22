@@ -14,6 +14,7 @@
 		180D0D862A6B1FFD0062AD74 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D0D852A6B1FFD0062AD74 /* TodoListView.swift */; };
 		180D0D882A6B24AC0062AD74 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D0D872A6B24AC0062AD74 /* RootView.swift */; };
 		180D0D8A2A6B31410062AD74 /* TodoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D0D892A6B31410062AD74 /* TodoListItemView.swift */; };
+		182029502A6C0198004EB967 /* TodoListGalleryViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820294F2A6C0197004EB967 /* TodoListGalleryViewPresenter.swift */; };
 		18B95BEE2A6BC6DF00545C50 /* TodoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B95BED2A6BC6DF00545C50 /* TodoListItem.swift */; };
 		18C9C3A92A6B079B004D5E9B /* FamiliaCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 18C9C3A82A6B079B004D5E9B /* FamiliaCore.docc */; };
 		18C9C3AF2A6B079B004D5E9B /* FamiliaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */; };
@@ -50,7 +51,6 @@
 		5CA2AACE2A67FE55001FD878 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AACD2A67FE55001FD878 /* AuthenticationService.swift */; };
 		5CA2AAD02A67FEAC001FD878 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2AACF2A67FEAC001FD878 /* KeychainItem.swift */; };
 		5CB39DD92A6BE7CF00898B0E /* TodosGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB39DD82A6BE7CF00898B0E /* TodosGalleryView.swift */; };
-		5CB39DDD2A6BEF1D00898B0E /* DragDropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB39DDC2A6BEF1D00898B0E /* DragDropDelegate.swift */; };
 		5CB39DDF2A6BEFA900898B0E /* TodosGalleryDropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB39DDE2A6BEFA900898B0E /* TodosGalleryDropDelegate.swift */; };
 		5CB39DE12A6BF56F00898B0E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB39DE02A6BF56F00898B0E /* Colors.swift */; };
 		63DD0DC857A5C20330D291D5 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AEF4BD419DFB65C2962B38E /* awsconfiguration.json */; };
@@ -120,6 +120,7 @@
 		180D0D852A6B1FFD0062AD74 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		180D0D872A6B24AC0062AD74 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		180D0D892A6B31410062AD74 /* TodoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItemView.swift; sourceTree = "<group>"; };
+		1820294F2A6C0197004EB967 /* TodoListGalleryViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListGalleryViewPresenter.swift; sourceTree = "<group>"; };
 		18B95BED2A6BC6DF00545C50 /* TodoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItem.swift; sourceTree = "<group>"; };
 		18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FamiliaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C9C3A72A6B079B004D5E9B /* FamiliaCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FamiliaCore.h; sourceTree = "<group>"; };
@@ -147,7 +148,6 @@
 		5CA2AACD2A67FE55001FD878 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		5CA2AACF2A67FEAC001FD878 /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
 		5CB39DD82A6BE7CF00898B0E /* TodosGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosGalleryView.swift; sourceTree = "<group>"; };
-		5CB39DDC2A6BEF1D00898B0E /* DragDropDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropDelegate.swift; sourceTree = "<group>"; };
 		5CB39DDE2A6BEFA900898B0E /* TodosGalleryDropDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosGalleryDropDelegate.swift; sourceTree = "<group>"; };
 		5CB39DE02A6BF56F00898B0E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		7310BFEEBA38C47FAAA54B78 /* Family+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Family+Schema.swift"; path = "amplify/generated/models/Family+Schema.swift"; sourceTree = "<group>"; };
@@ -212,6 +212,16 @@
 				180D0D892A6B31410062AD74 /* TodoListItemView.swift */,
 			);
 			path = TodoList;
+			sourceTree = "<group>";
+		};
+		182029512A6C01B9004EB967 /* TodoListGallery */ = {
+			isa = PBXGroup;
+			children = (
+				5CB39DD82A6BE7CF00898B0E /* TodosGalleryView.swift */,
+				1820294F2A6C0197004EB967 /* TodoListGalleryViewPresenter.swift */,
+				5CB39DDE2A6BEFA900898B0E /* TodosGalleryDropDelegate.swift */,
+			);
+			path = TodoListGallery;
 			sourceTree = "<group>";
 		};
 		18C9C3A62A6B079B004D5E9B /* FamiliaCore */ = {
@@ -316,17 +326,15 @@
 			children = (
 				5CA2AACA2A67FCC6001FD878 /* Familia.entitlements */,
 				5CA2AA992A67FAB2001FD878 /* FamiliaApp.swift */,
-				5CA2AA9B2A67FAB2001FD878 /* ContentView.swift */,
 				180D0D872A6B24AC0062AD74 /* RootView.swift */,
-				5CB39DE02A6BF56F00898B0E /* Colors.swift */,
-				5CB39DD82A6BE7CF00898B0E /* TodosGalleryView.swift */,
-				5CB39DDE2A6BEFA900898B0E /* TodosGalleryDropDelegate.swift */,
-				5CB39DDC2A6BEF1D00898B0E /* DragDropDelegate.swift */,
+				182029512A6C01B9004EB967 /* TodoListGallery */,
 				180D0D7E2A6B1F870062AD74 /* TodoList */,
 				18DF5EAD2A6B1C0A006887F4 /* SignInWithApple */,
 				5CA2AA9D2A67FAB3001FD878 /* Assets.xcassets */,
 				5CA2AAA22A67FAB3001FD878 /* Persistence.swift */,
+				5CB39DE02A6BF56F00898B0E /* Colors.swift */,
 				5CA2AAA42A67FAB3001FD878 /* Familia.xcdatamodeld */,
+				5CA2AA9B2A67FAB2001FD878 /* ContentView.swift */,
 				5CA2AA9F2A67FAB3001FD878 /* Preview Content */,
 			);
 			path = Familia;
@@ -616,6 +624,7 @@
 				18B95BEE2A6BC6DF00545C50 /* TodoListItem.swift in Sources */,
 				5CA2AACE2A67FE55001FD878 /* AuthenticationService.swift in Sources */,
 				180D0D882A6B24AC0062AD74 /* RootView.swift in Sources */,
+				182029502A6C0198004EB967 /* TodoListGalleryViewPresenter.swift in Sources */,
 				180D0D842A6B1FA90062AD74 /* TodoList.swift in Sources */,
 				5CB39DDF2A6BEFA900898B0E /* TodosGalleryDropDelegate.swift in Sources */,
 				5CA2AA9A2A67FAB2001FD878 /* FamiliaApp.swift in Sources */,
@@ -626,7 +635,6 @@
 				2A8A55F873EFF7F173926868 /* Family.swift in Sources */,
 				255CA6640F928749023A5021 /* Todo+Schema.swift in Sources */,
 				BBAC7BEF692AD5D2AF5D4658 /* Todo.swift in Sources */,
-				5CB39DDD2A6BEF1D00898B0E /* DragDropDelegate.swift in Sources */,
 				558DEB1B287D74BE098B4CB5 /* TodoItem+Schema.swift in Sources */,
 				F3A026F28ED4F835FA941AEA /* TodoItem.swift in Sources */,
 				8209B2DBF9762E837D6CB9C9 /* User+Schema.swift in Sources */,

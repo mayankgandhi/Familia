@@ -10,14 +10,14 @@ import SwiftUI
 struct TodoListItemView: View {
     
     @StateObject var todoListItem: TodoListItem
-    @FocusState var isTextFieldFocused: Bool
+    @FocusState var isTextFieldFocused: String?
     
     var body: some View {
         HStack {
             Image(systemName: todoListItem.checked ?  "checkmark.circle" : "circle")
                 .onTapGesture(perform: { todoListItem.checked.toggle() })
             TextField(todoListItem.content, text: $todoListItem.content)
-                .focused($isTextFieldFocused)
+                .focused($isTextFieldFocused, equals: todoListItem.id)
                 .strikethrough(todoListItem.checked)
         }
     }
