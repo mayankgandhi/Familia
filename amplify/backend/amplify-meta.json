@@ -33,11 +33,52 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "AppSync",
-      "lastPushTimeStamp": "2023-07-22T10:12:33.400Z",
+      "lastPushTimeStamp": "2023-07-22T12:53:08.007Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-familia-staging-185627-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apifamilia"
       }
+    }
+  },
+  "auth": {
+    "familia1af08acf": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-familia-staging-185627-deployment/amplify-cfn-templates/auth/familia1af08acf-cloudformation-template.json",
+        "logicalId": "authfamilia1af08acf"
+      },
+      "lastPushTimeStamp": "2023-07-22T12:53:09.099Z",
+      "output": {
+        "UserPoolId": "us-east-2_Ol4wMvQ3D",
+        "AppClientIDWeb": "4o97lofu939kqf5q0gfc2vhr07",
+        "AppClientID": "2uqj0bsmjvumdjm3p3uj8ftv2g",
+        "IdentityPoolId": "us-east-2:289c0ec0-fcee-4ad1-908c-ba91491ed0f2",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:016398641049:userpool/us-east-2_Ol4wMvQ3D",
+        "IdentityPoolName": "familia1af08acf_identitypool_1af08acf__staging",
+        "UserPoolName": "familia1af08acf_userpool_1af08acf"
+      },
+      "lastPushDirHash": "wnu2wRZ6qTuzvlI8NcuQe/poR9w="
     }
   }
 }

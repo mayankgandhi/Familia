@@ -14,31 +14,71 @@
   },
   "api": {
     "familia": {
-      "service": "AppSync",
-      "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "output": {
         "authConfig": {
+          "additionalAuthenticationProviders": [],
           "defaultAuthentication": {
-            "authenticationType": "API_KEY",
             "apiKeyConfig": {
-              "apiKeyExpirationDays": 365,
               "apiKeyExpirationDate": "2024-07-20T19:11:07.353Z",
+              "apiKeyExpirationDays": 365,
               "description": "ApiKey"
-            }
-          },
-          "additionalAuthenticationProviders": []
+            },
+            "authenticationType": "API_KEY"
+          }
         },
         "GraphQLAPIIdOutput": "u7glwki6rvan7hpy4naqw46zfe",
         "GraphQLAPIEndpointOutput": "https://yt2nveekojcczajidk37s3fzzi.appsync-api.us-east-2.amazonaws.com/graphql",
         "GraphQLAPIKeyOutput": "da2-eshksowqcnhnjfxxp25xdccdey"
       },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync",
+      "lastPushTimeStamp": "2023-07-22T12:53:08.007Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-familia-staging-185627-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apifamilia"
+      }
+    }
+  },
+  "auth": {
+    "familia1af08acf": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
       },
-      "lastPushTimeStamp": "2023-07-21T19:33:42.436Z",
-      "lastPushDirHash": "2y/8Z5TIlQcTaKi05G62dVPhFnk="
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-familia-staging-185627-deployment/amplify-cfn-templates/auth/familia1af08acf-cloudformation-template.json",
+        "logicalId": "authfamilia1af08acf"
+      },
+      "lastPushTimeStamp": "2023-07-22T12:53:09.099Z",
+      "output": {
+        "UserPoolId": "us-east-2_Ol4wMvQ3D",
+        "AppClientIDWeb": "4o97lofu939kqf5q0gfc2vhr07",
+        "AppClientID": "2uqj0bsmjvumdjm3p3uj8ftv2g",
+        "IdentityPoolId": "us-east-2:289c0ec0-fcee-4ad1-908c-ba91491ed0f2",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:016398641049:userpool/us-east-2_Ol4wMvQ3D",
+        "IdentityPoolName": "familia1af08acf_identitypool_1af08acf__staging",
+        "UserPoolName": "familia1af08acf_userpool_1af08acf"
+      },
+      "lastPushDirHash": "wnu2wRZ6qTuzvlI8NcuQe/poR9w="
     }
   }
 }

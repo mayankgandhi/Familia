@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import FamiliaCore
 
 @main
 struct FamiliaApp: App {
     var body: some Scene {
         WindowGroup {
-            RootView()
+            AuthenticatorDecorator { userCredentials in
+                RootView(userCredentials: userCredentials)
+            } signOut: {
+                print("Jai Govind")
+            }
         }
     }
 }

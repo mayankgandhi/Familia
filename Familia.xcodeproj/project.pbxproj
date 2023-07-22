@@ -15,6 +15,9 @@
 		180D0D882A6B24AC0062AD74 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D0D872A6B24AC0062AD74 /* RootView.swift */; };
 		180D0D8A2A6B31410062AD74 /* TodoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D0D892A6B31410062AD74 /* TodoListItemView.swift */; };
 		182029502A6C0198004EB967 /* TodoListGalleryViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820294F2A6C0197004EB967 /* TodoListGalleryViewPresenter.swift */; };
+		182029562A6C09D2004EB967 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 182029552A6C09D2004EB967 /* AWSCognitoAuthPlugin */; };
+		182029582A6C0AA8004EB967 /* AuthenticatorDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182029572A6C0AA8004EB967 /* AuthenticatorDecorator.swift */; };
+		1820295A2A6C1EDA004EB967 /* Authenticator in Frameworks */ = {isa = PBXBuildFile; productRef = 182029592A6C1EDA004EB967 /* Authenticator */; };
 		18B95BEE2A6BC6DF00545C50 /* TodoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B95BED2A6BC6DF00545C50 /* TodoListItem.swift */; };
 		18C9C3A92A6B079B004D5E9B /* FamiliaCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 18C9C3A82A6B079B004D5E9B /* FamiliaCore.docc */; };
 		18C9C3AF2A6B079B004D5E9B /* FamiliaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */; };
@@ -121,6 +124,7 @@
 		180D0D872A6B24AC0062AD74 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		180D0D892A6B31410062AD74 /* TodoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItemView.swift; sourceTree = "<group>"; };
 		1820294F2A6C0197004EB967 /* TodoListGalleryViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListGalleryViewPresenter.swift; sourceTree = "<group>"; };
+		182029572A6C0AA8004EB967 /* AuthenticatorDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatorDecorator.swift; sourceTree = "<group>"; };
 		18B95BED2A6BC6DF00545C50 /* TodoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItem.swift; sourceTree = "<group>"; };
 		18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FamiliaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C9C3A72A6B079B004D5E9B /* FamiliaCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FamiliaCore.h; sourceTree = "<group>"; };
@@ -165,8 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				180837E52A6B0A3000819B6B /* AWSDataStorePlugin in Frameworks */,
+				1820295A2A6C1EDA004EB967 /* Authenticator in Frameworks */,
 				180837E32A6B0A3000819B6B /* AWSAPIPlugin in Frameworks */,
 				180837E12A6B0A3000819B6B /* Amplify in Frameworks */,
+				182029562A6C09D2004EB967 /* AWSCognitoAuthPlugin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +237,7 @@
 				556CB65375D45B42DE86F225 /* AmplifyConfig */,
 				18C9C3A72A6B079B004D5E9B /* FamiliaCore.h */,
 				18DF5EA02A6B1697006887F4 /* FamiliaCoreApplicationService.swift */,
+				182029572A6C0AA8004EB967 /* AuthenticatorDecorator.swift */,
 				18C9C3A82A6B079B004D5E9B /* FamiliaCore.docc */,
 			);
 			path = FamiliaCore;
@@ -405,6 +412,8 @@
 				180837E02A6B0A3000819B6B /* Amplify */,
 				180837E22A6B0A3000819B6B /* AWSAPIPlugin */,
 				180837E42A6B0A3000819B6B /* AWSDataStorePlugin */,
+				182029552A6C09D2004EB967 /* AWSCognitoAuthPlugin */,
+				182029592A6C1EDA004EB967 /* Authenticator */,
 			);
 			productName = FamiliaCore;
 			productReference = 18C9C3A52A6B079B004D5E9B /* FamiliaCore.framework */;
@@ -444,6 +453,8 @@
 				18C9C3B92A6B079B004D5E9B /* PBXTargetDependency */,
 			);
 			name = Familia;
+			packageProductDependencies = (
+			);
 			productName = Familia;
 			productReference = 5CA2AA962A67FAB2001FD878 /* Familia.app */;
 			productType = "com.apple.product-type.application";
@@ -525,6 +536,7 @@
 			mainGroup = 5CA2AA8D2A67FAB2001FD878;
 			packageReferences = (
 				180837D92A6B09FA00819B6B /* XCRemoteSwiftPackageReference "amplify-swift" */,
+				182029522A6C09A5004EB967 /* XCRemoteSwiftPackageReference "amplify-ui-swift-authenticator" */,
 			);
 			productRefGroup = 5CA2AA972A67FAB2001FD878 /* Products */;
 			projectDirPath = "";
@@ -597,6 +609,7 @@
 				18DF5EA22A6B174E006887F4 /* TodoItem.swift in Sources */,
 				18DF5EA12A6B1697006887F4 /* FamiliaCoreApplicationService.swift in Sources */,
 				18DF5EAB2A6B174E006887F4 /* User.swift in Sources */,
+				182029582A6C0AA8004EB967 /* AuthenticatorDecorator.swift in Sources */,
 				18DF5EAC2A6B174E006887F4 /* Family+Schema.swift in Sources */,
 				18DF5EA42A6B174E006887F4 /* Todo.swift in Sources */,
 			);
@@ -1112,6 +1125,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		182029522A6C09A5004EB967 /* XCRemoteSwiftPackageReference "amplify-ui-swift-authenticator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ui-swift-authenticator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1129,6 +1150,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 180837D92A6B09FA00819B6B /* XCRemoteSwiftPackageReference "amplify-swift" */;
 			productName = AWSDataStorePlugin;
+		};
+		182029552A6C09D2004EB967 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 180837D92A6B09FA00819B6B /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		182029592A6C1EDA004EB967 /* Authenticator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 182029522A6C09A5004EB967 /* XCRemoteSwiftPackageReference "amplify-ui-swift-authenticator" */;
+			productName = Authenticator;
 		};
 /* End XCSwiftPackageProductDependency section */
 

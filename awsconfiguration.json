@@ -12,5 +12,41 @@
             "ApiKey": "da2-eshksowqcnhnjfxxp25xdccdey",
             "ClientDatabasePrefix": "familia_API_KEY"
         }
+    },
+    "CredentialsProvider": {
+        "CognitoIdentity": {
+            "Default": {
+                "PoolId": "us-east-2:289c0ec0-fcee-4ad1-908c-ba91491ed0f2",
+                "Region": "us-east-2"
+            }
+        }
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "us-east-2_Ol4wMvQ3D",
+            "AppClientId": "2uqj0bsmjvumdjm3p3uj8ftv2g",
+            "Region": "us-east-2"
+        }
+    },
+    "Auth": {
+        "Default": {
+            "authenticationFlowType": "USER_SRP_AUTH",
+            "socialProviders": [],
+            "usernameAttributes": [],
+            "signupAttributes": [
+                "EMAIL"
+            ],
+            "passwordProtectionSettings": {
+                "passwordPolicyMinLength": 8,
+                "passwordPolicyCharacters": []
+            },
+            "mfaConfiguration": "OFF",
+            "mfaTypes": [
+                "SMS"
+            ],
+            "verificationMechanisms": [
+                "EMAIL"
+            ]
+        }
     }
 }

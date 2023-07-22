@@ -8,6 +8,7 @@
 import Foundation
 import Amplify
 import AWSDataStorePlugin
+import AWSCognitoAuthPlugin
 
 final public class FamiliaCoreApplicationService {
     
@@ -20,6 +21,7 @@ final public class FamiliaCoreApplicationService {
             // AmplifyModels is generated in the previous step
             let dataStorePlugin = AWSDataStorePlugin(modelRegistration: AmplifyModels())
             try Amplify.add(plugin: dataStorePlugin)
+            try Amplify.add(plugin: AWSCognitoAuthPlugin())
             if let fileURL = Bundle.main.url(forResource: "amplifyconfiguration", withExtension: "json") {
                 try Amplify.configure(AmplifyConfiguration(configurationFile: fileURL))
             } else {

@@ -10,6 +10,7 @@ import FamiliaCore
 
 struct RootView: View {
     
+    let userCredentials: UserCredentials
     let familiaCoreApplicationService = FamiliaCoreApplicationService()
     @StateObject var createTodoListViewPresenter = TodoListGalleryViewPresenter()
     
