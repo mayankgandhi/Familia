@@ -17,18 +17,11 @@ public class TodoListItem: Identifiable, ObservableObject {
     public let id: String
     @Published public var content: String
     @Published public var checked: Bool
-    @Published public var itemState: TodoListItemState
     
     init(id: String, content: String, checked: Bool) {
         self.id = id
         self.content = content
         self.checked = checked
-        self.itemState = .textLabel
-    }
-    
-    @MainActor
-    func toggleChecked() {
-        checked.toggle()
     }
 }
 

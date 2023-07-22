@@ -11,17 +11,14 @@ struct TodoListView: View {
     
     let title: String
     @Binding var todos: [TodoListItem]
-    
-    let didTapToEdit: (TodoListItem)->Void
-    let onSubmitTextField: (TodoListItem)->Void
+    @FocusState var isTextFieldFocused: Bool
+
     
     var body: some View {
         NavigationView {
             List {
                 ForEach(todos) { todo in
-                    TodoListItemView(todoListItem: todo,
-                                     didTapToEdit: didTapToEdit,
-                                     onSubmitTextField: onSubmitTextField)
+                    TodoListItemView(todoListItem: todo)
                 }
                 .onDelete { indexSet in
                     todos.remove(atOffsets: indexSet)
