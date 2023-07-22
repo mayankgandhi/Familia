@@ -198,8 +198,8 @@
 		18C9C3A62A6B079B004D5E9B /* FamiliaCore */ = {
 			isa = PBXGroup;
 			children = (
-				556CB65375D45B42DE86F225 /* AmplifyConfig */,
 				BEC16D2F068CC503C4E5164D /* AmplifyModels */,
+				556CB65375D45B42DE86F225 /* AmplifyConfig */,
 				18C9C3A72A6B079B004D5E9B /* FamiliaCore.h */,
 				18DF5EA02A6B1697006887F4 /* FamiliaCoreApplicationService.swift */,
 				18C9C3A82A6B079B004D5E9B /* FamiliaCore.docc */,

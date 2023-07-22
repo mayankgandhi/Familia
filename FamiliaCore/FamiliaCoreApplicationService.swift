@@ -20,12 +20,14 @@ final public class FamiliaCoreApplicationService {
             // AmplifyModels is generated in the previous step
             let dataStorePlugin = AWSDataStorePlugin(modelRegistration: AmplifyModels())
             try Amplify.add(plugin: dataStorePlugin)
-            try Amplify.configure()
+            if let fileURL = Bundle.main.url(forResource: "amplifyconfiguration", withExtension: "json") {
+                try Amplify.configure(AmplifyConfiguration(configurationFile: fileURL))
+            } else {
+                try Amplify.configure()
+            }
             print("Amplify configured with DataStore plugin")
         } catch {
             print("Failed to initialize Amplify with \(error)")
         }
     }
-    
-    
 }

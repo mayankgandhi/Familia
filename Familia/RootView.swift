@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FamiliaCore
 
 final class CreateTodoListViewPresenter: ObservableObject {
     @Published var todos: [TodoListItem] = []
@@ -13,6 +14,7 @@ final class CreateTodoListViewPresenter: ObservableObject {
 
 struct RootView: View {
     
+    let familiaCoreApplicationService = FamiliaCoreApplicationService()
     @StateObject var createTodoListViewPresenter = CreateTodoListViewPresenter()
     
     var body: some View {
