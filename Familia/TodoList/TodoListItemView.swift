@@ -12,7 +12,6 @@ struct TodoListItemView: View {
     @StateObject var todoListItem: TodoListItem
     @FocusState var isTextFieldFocused: Bool
     
-    
     var body: some View {
         HStack {
             Image(systemName: todoListItem.checked ?  "checkmark.circle" : "circle")

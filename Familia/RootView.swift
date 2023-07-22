@@ -9,7 +9,6 @@ import SwiftUI
 
 final class CreateTodoListViewPresenter: ObservableObject {
     @Published var todos: [TodoListItem] = []
-    @Published var textInput: String = ""
 }
 
 struct RootView: View {

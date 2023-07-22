@@ -7,24 +7,6 @@
 
 import Foundation
 
-public enum TodoListItemState {
-    case textLabel
-    case textField
-    case loading
-}
-
-public class TodoListItem: Identifiable, ObservableObject {
-    public let id: String
-    @Published public var content: String
-    @Published public var checked: Bool
-    
-    init(id: String, content: String, checked: Bool) {
-        self.id = id
-        self.content = content
-        self.checked = checked
-    }
-}
-
 public class TodoList: Identifiable, ObservableObject {
     public let id: String
     @Published public var title: String
@@ -37,3 +19,4 @@ public class TodoList: Identifiable, ObservableObject {
     }
     
 }
+
